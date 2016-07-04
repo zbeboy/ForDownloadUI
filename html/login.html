@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Site Properties -->
-  <title>Login Example - Semantic</title>
+  <title>Login</title>
   <link rel="stylesheet" type="text/css" href="semantic.min.css">
 
   <script src="jquery.min.js"></script>
@@ -33,16 +33,16 @@
       $('.ui.form')
         .form({
           fields: {
-            email: {
-              identifier  : 'email',
+            user_login_id: {
+              identifier  : 'user_login_id',
               rules: [
                 {
                   type   : 'empty',
-                  prompt : 'Please enter your e-mail'
+                  prompt : '请填写您的账号'
                 },
                 {
-                  type   : 'email',
-                  prompt : 'Please enter a valid e-mail'
+                  type   : 'maxLength[10]',
+                  prompt : '您的账号应小于10个字符'
                 }
               ]
             },
@@ -51,11 +51,11 @@
               rules: [
                 {
                   type   : 'empty',
-                  prompt : 'Please enter your password'
+                  prompt : '请填写密码'
                 },
                 {
                   type   : 'length[6]',
-                  prompt : 'Your password must be at least 6 characters'
+                  prompt : '您的密码至少有6个字符'
                 }
               ]
             }
@@ -70,9 +70,9 @@
 <div class="ui middle aligned center aligned grid">
   <div class="column">
     <h2 class="ui teal image header">
-      <img src="assets/images/logo.png" class="image">
+      <img src="images/logo.png" class="image">
       <div class="content">
-        Log-in to your account
+        Log-in to ForDownload
       </div>
     </h2>
     <form class="ui large form">
@@ -80,16 +80,16 @@
         <div class="field">
           <div class="ui left icon input">
             <i class="user icon"></i>
-            <input type="text" name="email" placeholder="E-mail address">
+            <input type="text" name="user_login_id" placeholder="账号">
           </div>
         </div>
         <div class="field">
           <div class="ui left icon input">
             <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="密码">
           </div>
         </div>
-        <div class="ui fluid large teal submit button">Login</div>
+        <div class="ui fluid large teal submit button">登录</div>
       </div>
 
       <div class="ui error message"></div>
@@ -97,7 +97,7 @@
     </form>
 
     <div class="ui message">
-      New to us? <a href="#">Sign Up</a>
+      还没注册? <a href="signup.html">注册</a>
     </div>
   </div>
 </div>

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Site Properties -->
-  <title>Login</title>
+  <title>SignUp</title>
   <link rel="stylesheet" type="text/css" href="semantic.min.css">
 
   <script src="jquery.min.js"></script>
@@ -30,6 +30,8 @@
   <script>
   $(document)
     .ready(function() {
+	//添加async:false.即修改为同步 
+	//等ajax给bol赋值完毕后，才执行下面的js部分。而异步的话，还没有来得及赋值，就已经return了。 
       $('.ui.form')
         .form({
           fields: {
@@ -58,6 +60,15 @@
                   prompt : '您的密码至少有6个字符'
                 }
               ]
+            },
+            ok_password: {
+              identifier  : 'ok_password',
+              rules: [
+                {
+                  type   : 'match[password]',
+                  prompt : '密码不一致'
+                }
+              ]
             }
           }
         })
@@ -72,7 +83,7 @@
     <h2 class="ui teal image header">
       <img src="images/logo.png" class="image">
       <div class="content">
-        Log-in to ForDownload
+        Sign up to ForDownload
       </div>
     </h2>
     <form class="ui large form">
@@ -80,7 +91,7 @@
         <div class="field">
           <div class="ui left icon input">
             <i class="user icon"></i>
-            <input type="text" name="user_login_id" placeholder="账号">
+            <input type="text" name="user_login_id" placeholder="账号" >
           </div>
         </div>
         <div class="field">
@@ -89,7 +100,13 @@
             <input type="password" name="password" placeholder="密码">
           </div>
         </div>
-        <div class="ui fluid large teal submit button">登录</div>
+		<div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" name="ok_password" placeholder="确认密码">
+          </div>
+        </div>
+        <div class="ui fluid large teal submit button">注册</div>
       </div>
 
       <div class="ui error message"></div>
@@ -97,7 +114,7 @@
     </form>
 
     <div class="ui message">
-      还没注册? <a href="signup.html">注册</a>
+      <a href="login.html">返回登录</a>
     </div>
   </div>
 </div>
