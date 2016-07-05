@@ -17,7 +17,7 @@
     }
 
     .masthead.segment {
-      min-height: 700px;
+      min-height: 0px;
       padding: 1em 0em;
     }
     .masthead .logo.item img {
@@ -130,6 +130,9 @@
       })
 	  ;
 
+	  $('.menu .item')
+		.tab()
+	  ;
     })
   ;
   </script>
@@ -142,11 +145,11 @@
 	<div class="item">
 		<img src="images/logo.png">
     </div>
-    <a class="active item">ForDownload</a>
+    <a class="item">ForDownload</a>
     <div class="right menu">
 	  <a class="item" href="grade.html">班级</a>
 	  <a class="item" href="team.html">团队</a>
-      <a class="item" href="blog.html">博客</a>
+      <a class="active item" href="blog.html">博客</a>
 	  <a class="item">赵银</a>
       <div class="item">
         <a class="ui button">登 录</a>
@@ -166,10 +169,10 @@
   <div class="item">
 	<img src="images/logo.png">
   </div>
-  <a class="active item">ForDownload</a>
+  <a class="item">ForDownload</a>
   <a class="item" href="grade.html">班级</a>
   <a class="item" href="team.html">团队</a>
-  <a class="item" href="blog.html">博客</a>
+  <a class="active item" href="blog.html">博客</a>
   <a class="item">设置</a>
   <a class="item">退出</a>
   <a class="item">登录</a>
@@ -188,11 +191,11 @@
 		<div class="item">
 			<img src="images/logo.png">
         </div>
-        <a class="active item">ForDownload</a>
+        <a class="item">ForDownload</a>
         <div class="right item">
 		  <a class="item" href="grade.html">班级</a>
 		  <a class="item" href="team.html">团队</a>
-          <a class="item" href="blog.html">博客</a>
+          <a class="active item" href="blog.html">博客</a>
 		  <a class="item">赵银</a>
           <a class="ui inverted button" href="login.html">登 录</a>
           <a class="ui inverted button">注 册</a>
@@ -200,68 +203,119 @@
         </div>
       </div>
     </div>
-
-    <div class="ui text container">
-      <h1 class="ui inverted header">
-        Imagine-a-Company
-      </h1>
-      <h2>Do whatever you want when you want to.</h2>
-      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
-    </div>
-
   </div>
-
+  
+  <div class="ui grid container">
+	<div class="row">
+		<div class="column">
+			<div class="ui message">
+				<h1 class="ui header">Hello, world!</h1>
+				<p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+				<a class="ui blue button">编辑</a>
+			</div>
+		</div>	
+	</div>
+  </div>
+  
   <div class="ui vertical stripe segment">
-    <div class="ui middle aligned stackable grid container">
-      <div class="row">
-        <div class="eight wide column">
-          <h3 class="ui header">We Help Companies and Companions</h3>
-          <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-          <h3 class="ui header">We Make Bananas That Can Dance</h3>
-          <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
-        </div>
-        <div class="six wide right floated column">
-          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
-        </div>
-      </div>
-      <div class="row">
-        <div class="center aligned column">
-          <a class="ui huge button">Check Them Out</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="ui vertical stripe quote segment">
-    <div class="ui equal width stackable internally celled grid">
-      <div class="center aligned row">
-        <div class="column">
-          <h3>"What a Company"</h3>
-          <p>That is what they all say about us</p>
-        </div>
-        <div class="column">
-          <h3>"I shouldn't have gone with their competitor."</h3>
-          <p>
-            <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ui vertical stripe segment">
-    <div class="ui text container">
-      <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-      <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
-      <a class="ui large button">Read More</a>
-      <h4 class="ui horizontal header divider">
-        <a href="#">Case Studies</a>
-      </h4>
-      <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-      <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-      <a class="ui large button">I'm Still Quite Interested</a>
-    </div>
+	<div class="ui items container">
+		<div class="item">
+			<div class="ui small image">
+				<img src="images/company.jpg">
+			</div>
+			<div class="middle aligned content">
+				<div class="header">
+					Content A
+				</div>
+				<div class="description">
+					<p>《妖精的尾巴》是一部真岛浩创作的少年漫画。作品讲述了魔导士公会“妖精的尾巴”的成员露西、纳兹、哈比、格雷、艾露莎和他们的众多伙伴们在这个魔法世界中的一系列热血故事。</p>
+				</div>
+				<div class="extra">
+					<div class="ui right floated buttons">
+						<button class="ui primary button">编辑</button>
+						<div class="or"></div>
+						<button class="ui red button">删除</button>
+					</div>
+					<div class="ui labeled right floated icon button">
+						<i class="heart icon"></i>
+						like
+						<a class="ui basic left pointing label">
+							1,048
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="ui small image">
+				<img src="images/company.jpg">
+			</div>
+			<div class="middle aligned content">
+				<div class="header">
+					Content B
+				</div>
+				<div class="description">
+					<p>《妖精的尾巴》是一部真岛浩创作的少年漫画。作品讲述了魔导士公会“妖精的尾巴”的成员露西、纳兹、哈比、格雷、艾露莎和他们的众多伙伴们在这个魔法世界中的一系列热血故事。</p>
+				</div>
+				<div class="extra">
+					<div class="ui right floated buttons">
+						<button class="ui primary button">编辑</button>
+						<div class="or"></div>
+						<button class="ui red button">删除</button>
+					</div>
+					<div class="ui labeled right floated icon button">
+						<i class="heart icon"></i>
+						like
+						<a class="ui basic left pointing label">
+							1,048
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="ui small image">
+				<img src="images/company.jpg">
+			</div>
+			<div class="middle aligned content">
+				<div class="header">
+					Content C
+				</div>
+				<div class="description">
+					<p>《妖精的尾巴》是一部真岛浩创作的少年漫画。作品讲述了魔导士公会“妖精的尾巴”的成员露西、纳兹、哈比、格雷、艾露莎和他们的众多伙伴们在这个魔法世界中的一系列热血故事。</p>
+				</div>
+				<div class="extra">
+					<div class="ui right floated buttons">
+						<button class="ui primary button">编辑</button>
+						<div class="or"></div>
+						<button class="ui red button">删除</button>
+					</div>
+					<div class="ui labeled right floated icon button">
+						<i class="heart icon"></i>
+						like
+						<a class="ui basic left pointing label">
+							1,048
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="text-align:center">
+		<div class="ui pagination menu">
+			<a class="icon item">
+				<i class="left chevron icon"></i>
+			</a>
+			<a class="item">1</a>
+			<a class="item">2</a>
+			<a class="item">3</a>
+			<a class="item">4</a>
+			<a class="icon item">
+				<i class="right chevron icon"></i>
+			</a>
+		</div>
+	</div>
+	
   </div>
 
 
