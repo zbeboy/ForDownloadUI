@@ -29,7 +29,7 @@
     .masthead h1.ui.header {
       margin-top: 3em;
       margin-bottom: 0em;
-      font-size: 4em;
+      font-size: 3em;
       font-weight: normal;
     }
     .masthead h2 {
@@ -38,12 +38,11 @@
     }
 
     .ui.vertical.stripe {
-      padding: 8em 0em;
+      padding: 8em 0em;/*距离黑框的距离*/
     }
     .ui.vertical.stripe h3 {
-      font-size: 2em;
-    }
-    .ui.vertical.stripe .button + h3,
+      font-size: 2em;/*每个标题字体的大小*/
+	}
     .ui.vertical.stripe p + h3 {
       margin-top: 3em;
     }
@@ -51,7 +50,7 @@
       clear: both;
     }
     .ui.vertical.stripe p {
-      font-size: 1.33em;
+      font-size: 1.33em;/*每个段落字体的大小*/
     }
     .ui.vertical.stripe .horizontal.divider {
       margin: 3em 0em;
@@ -145,8 +144,8 @@
     <a class="active item">ForDownload</a>
     <div class="right menu">
 	  <a class="item" href="grade.html">班级</a>
-	  <a class="item" href="team.html">团队</a>
-      <a class="item" href="blog.html">博客</a>
+	  <a class="item">团队</a>
+      <a class="item">博客</a>
 	  <a class="item">赵银</a>
       <div class="item">
         <a class="ui button">登 录</a>
@@ -168,8 +167,8 @@
   </div>
   <a class="active item">ForDownload</a>
   <a class="item" href="grade.html">班级</a>
-  <a class="item" href="team.html">团队</a>
-  <a class="item" href="blog.html">博客</a>
+  <a class="item">团队</a>
+  <a class="item">博客</a>
   <a class="item">设置</a>
   <a class="item">退出</a>
   <a class="item">登录</a>
@@ -179,7 +178,6 @@
 <!-- Page Contents -->
 <div class="pusher">
   <div class="ui inverted vertical masthead center aligned segment">
-
     <div class="ui container">
       <div class="ui large secondary inverted pointing menu">
         <a class="toc item">
@@ -191,8 +189,8 @@
         <a class="active item">ForDownload</a>
         <div class="right item">
 		  <a class="item" href="grade.html">班级</a>
-		  <a class="item" href="team.html">团队</a>
-          <a class="item" href="blog.html">博客</a>
+		  <a class="item">团队</a>
+          <a class="item">博客</a>
 		  <a class="item">赵银</a>
           <a class="ui inverted button" href="login.html">登 录</a>
           <a class="ui inverted button">注 册</a>
@@ -203,92 +201,91 @@
 
     <div class="ui text container">
       <h1 class="ui inverted header">
-        Imagine-a-Company
+        欢迎进入资源管理系统！
       </h1>
-      <h2>Do whatever you want when you want to.</h2>
-      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+      <h2>海量资源，即时体验</h2>
+      <div class="ui huge primary button">开始体验 <i class="right arrow icon"></i></div>
     </div>
-
   </div>
 
   <div class="ui vertical stripe segment">
     <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <h3 class="ui header">We Help Companies and Companions</h3>
-          <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-          <h3 class="ui header">We Make Bananas That Can Dance</h3>
-          <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+          <h3 class="ui header">班级模块</h3>
+          <p>资源管理系统为班级提供了一个班级模块，它就类似于我们使用的”网盘“一样，该班级的所有用户都可以从"网盘"中上传和下载所需文件。 因此使用该系统的用户可以共享班级资源，
+          这样就大大提高了用户的使用和分享资源的效率。</p>
         </div>
         <div class="six wide right floated column">
-          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
-        </div>
-      </div>
-      <div class="row">
-        <div class="center aligned column">
-          <a class="ui huge button">Check Them Out</a>
+          <img src="images/company.jpg" class="ui large bordered rounded image">
         </div>
       </div>
     </div>
   </div>
-
-
-  <div class="ui vertical stripe quote segment">
+  
+  
+   <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row"> 
+      <div class="six wide right floated column">
+        <img src="images/company.jpg" class="ui large bordered rounded image">
+        </div>
+        <div class="eight wide column">
+          <h3 class="ui header">团队模块</h3>
+          <p> 资源管理系统为班级里面的每个小组提供了一个团队模块，这个模块主要是为了帮助每个组长管理他们的团队资源。 
+          组长和每个组员都可以共享团队模块的资源。同时也可以从团队模块里面上传和下载所需文件。</p>
+        </div> 
+      </div>
+    </div>
+  </div>
+  
+  
+   <div class="ui vertical stripe quote segment">
     <div class="ui equal width stackable internally celled grid">
       <div class="center aligned row">
         <div class="column">
-          <h3>"What a Company"</h3>
-          <p>That is what they all say about us</p>
-        </div>
-        <div class="column">
-          <h3>"I shouldn't have gone with their competitor."</h3>
+          <h3><img src="images/logo.png" class="ui avatar image">博客模块</h3>
           <p>
-            <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-          </p>
+          资源管理系统为班级提供了一个博客模块，这个模块记录着班级体每次活动的照片。给班级成员留下美好的回忆。 它主要是展示班级体活动的一些照片，班级里的成员可以从博客模块上传和下载团队或个人的风采展示照片 。
+          同时班级里的成员可以共享博客模块的资源。</p>
+        </div>
+        <div class="six wide right floated column">
+          <img src="images/company.jpg" class="ui large bordered rounded image">
         </div>
       </div>
     </div>
   </div>
-
+ 
   <div class="ui vertical stripe segment">
     <div class="ui text container">
-      <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-      <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
-      <a class="ui large button">Read More</a>
-      <h4 class="ui horizontal header divider">
-        <a href="#">Case Studies</a>
-      </h4>
-      <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-      <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-      <a class="ui large button">I'm Still Quite Interested</a>
-    </div>
+      <h3 class="ui header"> <img src="images/logo.png" class="ui avatar image">个人模块</h3>
+       <p>资源管理系统为班级提供了个人模块，这个模块主要是方便班级成员管理个人的信息， 在这个模块班级成员可以选择自己喜欢的团队然后加入团队。班级成员可以上传班级、团队、个人资源； 同时也可以修改个人信息和密码。</p>
+      <div class="six wide right floated column">
+          <img src="images/company.jpg" class="ui large bordered rounded image">
+        </div>
+    </div>  
   </div>
-
-
+  
   <div class="ui inverted vertical footer segment">
     <div class="ui container">
       <div class="ui stackable inverted divided equal height stackable grid">
         <div class="three wide column">
-          <h4 class="ui inverted header">About</h4>
+          <h4 class="ui inverted header">联系方式</h4>
           <div class="ui inverted link list">
-            <a href="#" class="item">Sitemap</a>
-            <a href="#" class="item">Contact Us</a>
-            <a href="#" class="item">Religious Ceremonies</a>
-            <a href="#" class="item">Gazebo Plans</a>
+            <a href="#" class="item">电话：12348759594</a>
+            <a href="#" class="item">qq:2545987615</a>
+            <a href="#" class="item">邮箱：2545987615@qq.com</a>
           </div>
         </div>
         <div class="three wide column">
-          <h4 class="ui inverted header">Services</h4>
+          <h4 class="ui inverted header">帮助</h4>
           <div class="ui inverted link list">
-            <a href="#" class="item">Banana Pre-Order</a>
-            <a href="#" class="item">DNA FAQ</a>
-            <a href="#" class="item">How To Access</a>
-            <a href="#" class="item">Favorite X-Men</a>
+            <a href="#" class="item">服务热线：400-123456789</a>
           </div>
         </div>
         <div class="seven wide column">
-          <h4 class="ui inverted header">Footer Header</h4>
-          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+          <h4 class="ui inverted header">友情链接</h4>
+          <p>http://www.zbeboy.top</p>
         </div>
       </div>
     </div>
